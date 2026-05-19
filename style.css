@@ -1,10 +1,10 @@
 /* ===========================
 WARUNG OPEN SOURCE - CSS
 =========================== */
- *, *::before, *::after {
+*, *::before, *::after {
 box-sizing: border-box;
 }
- body {
+body {
 margin: 0;
 font-family: 'Segoe UI', sans-serif;
 background: linear-gradient(135deg, #f5e6d3, #d2a679);
@@ -14,30 +14,30 @@ justify-content: center;
 align-items: center;
 min-height: 100vh;
 }
- /* ===========================
+/* ===========================
 INDEX PAGE
 =========================== */
 .container {
 text-align: center;
 padding: 20px;
 }
- .title {
+.title {
 font-size: 44px;
 margin-bottom: 10px;
 font-weight: bold;
 color: #4e2d1f;
 }
- .subtitle {
+.subtitle {
 font-size: 17px;
 margin-bottom: 35px;
 opacity: 0.8;
 }
- .card-container {
+.card-container {
 display: flex;gap: 30px;
 justify-content: center;
 flex-wrap: wrap;
 }
- /* ===========================
+/* ===========================
 CARD (INDEX)
 =========================== */
 .card {
@@ -50,29 +50,29 @@ border-radius: 18px;
 box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 transition: 0.3s;
 }
- .card-icon {
+.card-icon {
 font-size: 40px;
 margin-bottom: 12px;
 }
- .card h2 {
+.card h2 {
 margin: 0 0 8px;
 font-size: 22px;
 }
- .card p {
+.card p {
 margin: 0;
 font-size: 14px;
 opacity: 0.75;
 }
- .card:hover {
+.card:hover {
 transform: translateY(-10px) scale(1.05);
 box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
- .admin {
+.admin {
 background: #ffe0b3;}
- .admin:hover {
+.admin:hover {
 background: #ffcc80;
 }
- /* ===========================
+/* ===========================
 FORM INPUTS
 =========================== */
 input[type="text"],
@@ -88,10 +88,10 @@ outline: none;
 transition: border 0.2s;
 background: white;
 }
- input:focus, select:focus {
+input:focus, select:focus {
 border-color: #a34700;
 }
- /* ===========================
+/* ===========================
 BUTTONS
 =========================== */
 .btn {
@@ -104,10 +104,10 @@ font-size: 15px;
 cursor: pointer;
 transition: 0.3s;
 }
- .btn:hover {background: #7a3300;
+.btn:hover {background: #7a3300;
 transform: scale(1.02);
 }
- /* tombol kembali pojok kiri atas */
+/* tombol kembali pojok kiri atas */
 .back-btn {
 position: fixed;
 top: 20px;
@@ -122,11 +122,11 @@ box-shadow: 0 5px 12px rgba(0,0,0,0.12);
 transition: 0.2s;
 z-index: 100;
 }
- .back-btn:hover {
+.back-btn:hover {
 background: #f0d9b5;
 transform: translateY(-2px);
 }
- /* tombol panggil pelayan pojok kanan bawah */
+/* tombol panggil pelayan pojok kanan bawah */
 .call-btn {
 position: fixed;
 bottom: 25px;
@@ -146,7 +146,7 @@ z-index: 999;
 background: #b71c1c;
 transform: scale(1.05);
 }
- /* ===========================
+/* ===========================
 MENU GRID
 =========================== */
 .menu-grid {
@@ -155,14 +155,14 @@ grid-template-columns: repeat(3, 1fr);
 gap: 18px;
 margin-bottom: 20px;
 }
- @media (max-width: 768px) {
+@media (max-width: 768px) {
 .menu-grid { grid-template-columns: repeat(2, 1fr); }
 .title { font-size: 32px; }
 }
- @media (max-width: 480px) {
+@media (max-width: 480px) {
 .menu-grid { grid-template-columns: 1fr; }
 }
- /* ===========================
+/* ===========================
 STATUS BADGE
 =========================== */
 .badge {
