@@ -119,6 +119,7 @@ while($m = $makanan->fetch_assoc()){
 ?>
     <div class="card">
         <h4><?= $m['name'] ?></h4>
+        <img src="<?= $m['image'] ?>" alt="<?= $m['name'] ?>" style="width:100%;height:150px;object-fit:cover;border-radius:10px;">
         <p>Rp <?= number_format($m['price']) ?></p>
         <input type="number" name="qty[<?= $m['id'] ?>]" min="0" value="0">
     </div>
@@ -133,6 +134,7 @@ while($d = $minuman->fetch_assoc()){
 ?>
     <div class="card">
         <h4><?= $d['name'] ?></h4>
+        <img src="<?= $d['image'] ?>" alt="<?= $d['name'] ?>" style="width:100%;height:150px;object-fit:cover;border-radius:10px;">
         <p>Rp <?= number_format($d['price']) ?></p>
         <input type="number" name="qty[<?= $d['id'] ?>]" min="0" value="0">
     </div>

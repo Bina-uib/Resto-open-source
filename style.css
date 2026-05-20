@@ -4,6 +4,7 @@ WARUNG OPEN SOURCE - CSS
 *, *::before, *::after {
 box-sizing: border-box;
 }
+
 body {
 margin: 0;
 font-family: 'Segoe UI', sans-serif;
@@ -150,28 +151,29 @@ transform: scale(1.05);
 MENU GRID
 =========================== */
 .menu-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 18px;
-margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 20px;
 }
+
 @media (max-width: 768px) {
-.menu-grid { grid-template-columns: repeat(2, 1fr); }
-.title { font-size: 32px; }
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    font-size: 32px;
+  }
 }
+
 @media (max-width: 480px) {
-.menu-grid { grid-template-columns: 1fr; }
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
 }
+
 /* ===========================
-STATUS BADGE
-=========================== */
-.badge {
-padding: 4px 12px;
-border-radius: 20px;
-font-size: 12px;
-font-weight: bold;
-display: inline-block;
-}
-.badge-pending { background: #fff3cd; color: #856404; }
 .badge-proses { background: #cce5ff; color: #004085; }
 .badge-selesai { background: #d4edda; color: #155724; }
+*/
